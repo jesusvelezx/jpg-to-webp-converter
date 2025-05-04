@@ -4,7 +4,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![Pillow Version](https://img.shields.io/badge/Pillow-8.0+-green.svg)](https://python-pillow.org/)
 
-Una herramienta sencilla pero potente para convertir imágenes JPG a formato WebP, reduciendo el tamaño de archivo mientras mantiene una excelente calidad visual.
+Una herramienta sencilla, pero potente para convertir imágenes JPG a formato WebP, reduciendo el tamaño de archivo mientras mantiene una excelente calidad visual.
 
 ## ✨ Características
 
@@ -37,8 +37,8 @@ python convertidor.py
 
 ### Argumentos opcionales
 
-- `--input`: Carpeta de origen con las imágenes JPG (por defecto: "./input")
-- `--output`: Carpeta de destino para las imágenes WebP (por defecto: "./output")
+- `--input`: Carpeta de origen con las imágenes JPG (por defecto:"./input")
+- `--output`: Carpeta de destino para las imágenes WebP (por defecto:"./output")
 - `--quality`: Nivel de calidad WebP (0-100, por defecto: 80)
 
 Ejemplo:
@@ -73,5 +73,7 @@ Las contribuciones son bienvenidas. Por favor, siente libre de:
 4. Push a la rama (`git push origin feature/amazing-feature`)
 5. Abrir un Pull Request
 
+
+_________
 
 ⭐️ **¡No olvides darle una estrella al proyecto si te fue útil!** ⭐️
