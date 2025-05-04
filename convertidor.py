@@ -1,6 +1,3 @@
-
-# Proyecto personal y de práctica
-
 import os
 from tkinter import Tk, filedialog
 from PIL import Image
