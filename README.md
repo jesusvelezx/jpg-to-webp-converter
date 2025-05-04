@@ -36,8 +36,8 @@ python convertidor.py
 
 ### Argumentos opcionales
 
-- `--input`: Carpeta de origen con las imágenes JPG (por defecto:“./input”)
-- `--output`: Carpeta de destino para las imágenes WebP (por defecto:“./output”)
+- `--input`: Carpeta de origen con las imágenes JPG (por defecto: **“./input”**)
+- `--output`: Carpeta de destino para las imágenes WebP (por defecto: **“./output”**)
 - `--quality`: Nivel de calidad WebP (0-100, por defecto: 80)
 
 Ejemplo:
