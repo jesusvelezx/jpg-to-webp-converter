@@ -21,7 +21,6 @@ Una herramienta sencilla, pero potente para convertir imágenes JPG a formato We
 git clone https://github.com/tu-usuario/jpg-to-webp-converter.git
 cd jpg-to-webp-converter
 ```
-
 2. Instala las dependencias:
 ```bash
 pip install pillow
@@ -37,8 +36,8 @@ python convertidor.py
 
 ### Argumentos opcionales
 
-- `--input`: Carpeta de origen con las imágenes JPG (por defecto:"./input")
-- `--output`: Carpeta de destino para las imágenes WebP (por defecto:"./output")
+- `--input`: Carpeta de origen con las imágenes JPG (por defecto:“./input”)
+- `--output`: Carpeta de destino para las imágenes WebP (por defecto:“./output”)
 - `--quality`: Nivel de calidad WebP (0-100, por defecto: 80)
 
 Ejemplo:
@@ -49,19 +48,15 @@ python convertidor.py --input ./mis_fotos --output ./fotos_optimizadas --quality
 ## 📊 Comparación de formatos
 
 | Formato | Tamaño promedio | Soporte en navegadores | Transparencia | Animación |
-|---------|----------------|------------------------|---------------|-----------|
-| JPG     | Medio          | Todos                  | No            | No        |
-| WebP    | Bajo           | Modernos               | Sí            | Sí        |
-| PNG     | Alto           | Todos                  | Sí            | No        |
+|---------|-----------------|------------------------|---------------|-----------|
+| JPG     | Medio           | Todos                  | No            | No        |
+| WebP    | Bajo            | Modernos               | Sí            | Sí        |
+| PNG     | Alto            | Todos                  | Sí            | No        |
 
 ## 🔧 Requisitos
 
 - Python 3.6 o superior
 - Pillow (PIL Fork) 8.0 o superior
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## 👥 Contribuciones
 
