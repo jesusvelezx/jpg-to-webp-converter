@@ -1,22 +1,25 @@
+
+# Proyecto personal y de práctica
+
 import os
 from tkinter import Tk, filedialog
 from PIL import Image
 
 
-def seleccionar_carpeta (titulo = "Selecciona una carpeta"):
-	root = Tk( )
-	root.withdraw( )
+def seleccionar_carpeta(titulo = "Selecciona una carpeta"):
+	root = Tk()
+	root.withdraw()
 	carpeta = filedialog.askdirectory(title = titulo)
 	return carpeta
 
 
-def convertir_jpg_a_webp (carpeta_origen, carpeta_destino):
+def convertir_jpg_a_webp(carpeta_origen, carpeta_destino):
 	if not carpeta_origen or not carpeta_destino:
 		print("No se seleccionaron rutas válidas.")
 		return
 	
 	for archivo in os.listdir(carpeta_origen):
-		if archivo.lower( ).endswith(".jpg") or archivo.lower( ).endswith(".jpeg"):
+		if archivo.lower().endswith(".jpg") or archivo.lower().endswith(".jpeg"):
 			ruta_origen = os.path.join(carpeta_origen, archivo)
 			nombre_base = os.path.splitext(archivo)[0]
 			ruta_destino = os.path.join(carpeta_destino, nombre_base + ".webp")
