@@ -73,10 +73,5 @@ Las contribuciones son bienvenidas. Por favor, siente libre de:
 4. Push a la rama (`git push origin feature/amazing-feature`)
 5. Abrir un Pull Request
 
-## 📞 Contacto
-
-Link del proyecto: [https://github.com/tu-usuario/jpg-to-webp-converter](https://github.com/tu-usuario/jpg-to-webp-converter)
-
----
 
 ⭐️ **¡No olvides darle una estrella al proyecto si te fue útil!** ⭐️
