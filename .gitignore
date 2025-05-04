@@ -1,0 +1,5 @@
+pycache/
+*.pyc
+.idea/
+*.webp # Ignora archivos WebP generados
+venv/ # Por si luego usas entorno virtual
