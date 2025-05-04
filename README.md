@@ -6,8 +6,6 @@
 
 Una herramienta sencilla pero potente para convertir imágenes JPG a formato WebP, reduciendo el tamaño de archivo mientras mantiene una excelente calidad visual.
 
-![WebP Conversion Banner](https://miro.medium.com/max/700/1*OmivhXPfHNWLQ-Gv1FUdCw.png)
-
 ## ✨ Características
 
 - **Conversión eficiente**: Transforma imágenes JPG al formato WebP, logrando hasta un 34% de reducción de tamaño
@@ -76,8 +74,6 @@ Las contribuciones son bienvenidas. Por favor, siente libre de:
 5. Abrir un Pull Request
 
 ## 📞 Contacto
-
-Tu nombre - [@tu_twitter](https://twitter.com/tu_twitter) - tu.email@example.com
 
 Link del proyecto: [https://github.com/tu-usuario/jpg-to-webp-converter](https://github.com/tu-usuario/jpg-to-webp-converter)
 
