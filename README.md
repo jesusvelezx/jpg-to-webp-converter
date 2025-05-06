@@ -8,7 +8,7 @@
 
 Una herramienta sencilla, pero potente para convertir imágenes JPG a formato WebP, reduciendo el tamaño de archivo mientras mantiene una excelente calidad visual.
 
-![Vista Previa de la Aplicación](https://raw.githubusercontent.com/username/image-converter/main/preview.png)
+![Vista Previa de la Aplicación](https://github.com/jesusvelezx/jpg-to-webp-converter)
 
 ## ✨ Características
 
@@ -34,7 +34,7 @@ Una herramienta sencilla, pero potente para convertir imágenes JPG a formato We
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/username/jpg-to-webp-converter.git
+   git clone https://github.com/jesusvelezx/jpg-to-webp-converter
    ```
 
 2. Navega al directorio del proyecto:
@@ -123,9 +123,9 @@ Al finalizar la conversión, la aplicación muestra:
 
 ## 📱 Capturas de Pantalla
 
-![Interfaz principal](https://raw.githubusercontent.com/username/jpg-to-webp-converter/main/screenshots/main-ui.png)
-![Vista previa de conversión](https://raw.githubusercontent.com/username/jpg-to-webp-converter/main/screenshots/preview.png)
-![Estadísticas](https://raw.githubusercontent.com/username/jpg-to-webp-converter/main/screenshots/stats.png)
+![Interfaz principal](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/main-ui.png)
+![Vista previa de conversión](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/preview.png)
+![Estadísticas](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/stats.png)
 
 ## 📝 Licencia
 
@@ -133,7 +133,7 @@ Este proyecto está licenciado bajo [MIT License](LICENSE).
 
 ## 📊 Estadísticas de Uso
 
-![GitHub stars](https://img.shields.io/github/stars/username/jpg-to-webp-converter?style=social)
-![GitHub forks](https://img.shields.io/github/forks/username/jpg-to-webp-converter?style=social)
-![GitHub issues](https://img.shields.io/github/issues/username/jpg-to-webp-converter)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/username/jpg-to-webp-converter)
+![GitHub stars](https://img.shields.io/github/stars/jesusvelezx/jpg-to-webp-converter?style=social)
+![GitHub forks](https://img.shields.io/github/forks/jesusvelezx/jpg-to-webp-converter?style=social)
+![GitHub issues](https://img.shields.io/github/issues/jesusvelezx/jpg-to-webp-converter)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/jesusvelezx/jpg-to-webp-converter)
