@@ -121,7 +121,7 @@ Al finalizar la conversión, la aplicación muestra:
 4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
 5. Abre un Pull Request
 
-## 📱 Capturas de Pantalla
+## 📱 Capturas de Pantalla.
 
 ![Interfaz principal](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/main-ui.png)
 ![Vista previa de conversión](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/preview.png)
