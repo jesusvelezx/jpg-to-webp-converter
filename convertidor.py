@@ -334,7 +334,7 @@ class ImageConverterApp:
 		self.tiempo_inicio = time.time()
 		
 		# Iniciar conversión en hilo separado
-		threading.Thread(target = self.procesar_lote, args = (carpeta_origen, carpeta_destino, archivos)).start( )
+		threading.Thread(target = self.procesar_lote, args = (carpeta_origen, carpeta_destino, archivos)).start()
 	
 	def procesar_lote(self, carpeta_origen, carpeta_destino, archivos):
 		# Actualizar interfaz
