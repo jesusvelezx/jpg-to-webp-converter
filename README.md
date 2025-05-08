@@ -68,22 +68,22 @@ Una herramienta sencilla, pero potente para convertir imágenes JPG a formato We
 
 6. Haz clic en "Convertir" para procesar todas las imágenes
 
-## 📖 Guía Detallada
+## 📖 Guía Detallada.
 
-### Configuración Inicial
+### Configuración Inicial.
 
 - **Carpeta de origen**: Contiene las imágenes a convertir (JPG, JPEG, PNG, BMP, TIFF, GIF)
 - **Carpeta de destino**: Donde se guardarán las imágenes convertidas
 - **Formato de salida**: Selecciona entre WebP, PNG, JPG, AVIF o HEIF
 - **Calidad**: Ajusta la calidad de compresión para formatos con pérdida (WebP, JPG, AVIF, HEIF)
 
-### Opciones Avanzadas
+### Opciones Avanzadas.
 
 - **Conservar metadatos**: Mantiene información EXIF como fecha de captura, datos de la cámara, etc.
 - **Redimensionar imágenes**: Reduce el tamaño de las imágenes manteniendo la proporción
 - **Ancho máximo**: Define el ancho máximo para el redimensionado
 
-### Vista Previa
+### Vista Previa.
 
 Antes de procesar todo el lote, puedes ver cómo quedaría una imagen después de la conversión:
 
@@ -92,7 +92,7 @@ Antes de procesar todo el lote, puedes ver cómo quedaría una imagen después d
 3. Compara el tamaño original vs. el tamaño convertido
 4. Observa el porcentaje de ahorro de espacio
 
-### Estadísticas y Reportes
+### Estadísticas y Reportes.
 
 Al finalizar la conversión, la aplicación muestra:
 
@@ -103,7 +103,7 @@ Al finalizar la conversión, la aplicación muestra:
 - Tiempo de procesamiento
 - Gráfico comparativo (se guarda automáticamente)
 
-## 🎯 Por Qué Usar Este Convertidor
+## 🎯 Por Qué Usar Este Convertidor.
 
 - **Ahorro de espacio**: Reduce significativamente el tamaño de tus imágenes sin pérdida notable de calidad
 - **Formatos modernos**: Soporte para formatos de imagen de última generación
@@ -111,7 +111,7 @@ Al finalizar la conversión, la aplicación muestra:
 - **Facilidad de uso**: Interfaz intuitiva sin necesidad de conocimientos técnicos
 - **Control total**: Ajusta la calidad y tamaño según tus necesidades específicas
 
-## 👥 Contribuciones
+## 👥 Contribuciones.
 
 ¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar esta aplicación:
 
