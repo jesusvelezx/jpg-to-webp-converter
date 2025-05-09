@@ -8,7 +8,7 @@
 
 Una herramienta sencilla, pero potente para convertir imágenes JPG a formato WebP, reduciendo el tamaño de archivo mientras mantiene una excelente calidad visual.
 
-![Vista Previa de la Aplicación](https://github.com/jesusvelezx/jpg-to-webp-converter)
+![Vista Previa de la Aplicación](https://github.com/jesusvelezx/jpg-to-webp-converter/blob/main/screenshots/main-ui.png)
 
 ## ✨ Características
 
