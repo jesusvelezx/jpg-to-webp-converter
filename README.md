@@ -13,14 +13,16 @@ Una herramienta sencilla, pero potente para convertir imágenes JPG a formato We
 ## ✨ Características
 
 - **Conversión entre múltiples formatos**: WebP, PNG, JPG, AVIF y HEIF
-- **Interfaz gráfica completa**: Fácil de usar con paneles organizados para configuración y vista previa
+- **Interfaz gráfica moderna**: Fácil de usar con diseño intuitivo y elementos visuales mejorados
 - **Control de calidad ajustable**: Optimiza el equilibrio entre calidad y tamaño de archivo
-- **Vista previa en tiempo real**: Visualiza los resultados antes de procesar todo el lote
+- **Vista previa en tiempo real**: Visualiza los cambios automáticamente sin necesidad de clics adicionales
+- **Selección flexible**: Elige entre procesar carpetas completas o archivos individuales específicos
+- **Navegación de imágenes**: Sistema integrado para navegar entre múltiples imágenes seleccionadas
 - **Procesamiento multi-núcleo**: Aprovecha todos los núcleos de la CPU para conversiones rápidas
 - **Estadísticas detalladas**: Información sobre ahorro de espacio y tiempo de procesamiento
 - **Redimensionado inteligente**: Opción para redimensionar imágenes manteniendo la proporción
 - **Preservación de metadatos**: Mantiene la información EXIF de las imágenes originales
-- **Reporte gráfico**: Genera automáticamente un gráfico comparativo del ahorro de espacio
+- **Reporte gráfico mejorado**: Genera automáticamente un gráfico comparativo del ahorro de espacio con diseño visualmente atractivo
 
 ## 🛠️ Requisitos
 
@@ -51,12 +53,14 @@ Una herramienta sencilla, pero potente para convertir imágenes JPG a formato We
 
 1. Ejecuta la aplicación:
    ```bash
-   python image_converter.py
+   python convertidor.py
    ```
 
-2. Selecciona la carpeta de origen con tus imágenes
+2. Elige el modo de selección:
+   - **Modo carpeta**: Selecciona una carpeta completa con imágenes
+   - **Modo archivos**: Selecciona imágenes individuales específicas
 
-3. Elige la carpeta de destino para las imágenes convertidas
+3. Selecciona la carpeta de destino para las imágenes convertidas
 
 4. Configura las opciones de conversión:
    - Formato de salida (WebP, PNG, JPG, AVIF, HEIF)
@@ -64,35 +68,36 @@ Una herramienta sencilla, pero potente para convertir imágenes JPG a formato We
    - Preservación de metadatos
    - Redimensionado (opcional)
 
-5. Utiliza la función "Vista previa" para verificar los resultados en una imagen
+5. La vista previa se actualiza automáticamente al cambiar cualquier configuración
 
 6. Haz clic en "Convertir" para procesar todas las imágenes
 
-## 📖 Guía Detallada.
+## 📖 Guía Detallada
 
-### Configuración Inicial.
+### Configuración Inicial
 
-- **Carpeta de origen**: Contiene las imágenes a convertir (JPG, JPEG, PNG, BMP, TIFF, GIF)
-- **Carpeta de destino**: Donde se guardarán las imágenes convertidas
+- **Modo de selección**: Elige entre procesar una carpeta o archivos específicos
+- **Origen**: Carpeta o archivos individuales para convertir (JPG, JPEG, PNG, BMP, TIFF, GIF)
+- **Destino**: Donde se guardarán las imágenes convertidas
 - **Formato de salida**: Selecciona entre WebP, PNG, JPG, AVIF o HEIF
 - **Calidad**: Ajusta la calidad de compresión para formatos con pérdida (WebP, JPG, AVIF, HEIF)
 
-### Opciones Avanzadas.
+### Opciones Avanzadas
 
 - **Conservar metadatos**: Mantiene información EXIF como fecha de captura, datos de la cámara, etc.
 - **Redimensionar imágenes**: Reduce el tamaño de las imágenes manteniendo la proporción
 - **Ancho máximo**: Define el ancho máximo para el redimensionado
 
-### Vista Previa.
+### Vista Previa Automática
 
-Antes de procesar todo el lote, puedes ver cómo quedaría una imagen después de la conversión:
+La aplicación ahora muestra automáticamente una vista previa:
 
-1. Selecciona una imagen para vista previa
-2. Verifica la calidad visual resultante
-3. Compara el tamaño original vs. el tamaño convertido
-4. Observa el porcentaje de ahorro de espacio
+1. Al seleccionar un archivo o carpeta, se muestra una vista previa instantánea
+2. Al cambiar cualquier configuración (formato, calidad, redimensionado), la vista previa se actualiza
+3. Visualiza el nombre del archivo, dimensiones originales y comparativa de tamaños
+4. Con múltiples imágenes, navega entre ellas con botones "Anterior/Siguiente"
 
-### Estadísticas y Reportes.
+### Estadísticas y Reportes Mejorados
 
 Al finalizar la conversión, la aplicación muestra:
 
@@ -101,17 +106,20 @@ Al finalizar la conversión, la aplicación muestra:
 - Tamaño nuevo acumulado
 - Porcentaje de ahorro total
 - Tiempo de procesamiento
-- Gráfico comparativo (se guarda automáticamente)
+- Ventana de resumen detallado con diseño atractivo
+- Gráfico comparativo mejorado (se guarda automáticamente)
 
-## 🎯 Por Qué Usar Este Convertidor.
+## 🎯 Por Qué Usar Este Convertidor
 
 - **Ahorro de espacio**: Reduce significativamente el tamaño de tus imágenes sin pérdida notable de calidad
 - **Formatos modernos**: Soporte para formatos de imagen de última generación
+- **Experiencia mejorada**: Previsualización automática y navegación intuitiva
+- **Selección flexible**: Procesa carpetas completas o solo los archivos que necesitas
 - **Eficiencia**: Procesamiento en paralelo para conversiones rápidas
-- **Facilidad de uso**: Interfaz intuitiva sin necesidad de conocimientos técnicos
+- **Facilidad de uso**: Interfaz moderna e intuitiva sin necesidad de conocimientos técnicos
 - **Control total**: Ajusta la calidad y tamaño según tus necesidades específicas
 
-## 👥 Contribuciones.
+## 👥 Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar esta aplicación:
 
@@ -121,11 +129,24 @@ Al finalizar la conversión, la aplicación muestra:
 4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
 5. Abre un Pull Request
 
-## 📱 Capturas de Pantalla.
+## 📱 Capturas de Pantalla
 
 ![Interfaz principal](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/main-ui.png)
 ![Vista previa de conversión](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/preview.png)
 ![Estadísticas](https://raw.githubusercontent.com/jesusvelezx/jpg-to-webp-converter/main/screenshots/stats.png)
+
+## 📋 Actualizaciones Recientes
+
+### Versión 2.0.0
+- **Nueva interfaz moderna**: Diseño más limpio y elementos visuales mejorados
+- **Previsualización automática**: Las imágenes se previsualizan instantáneamente al seleccionarlas
+- **Selección de archivos individuales**: Ahora puedes elegir archivos específicos en lugar de carpetas completas
+- **Sistema de navegación**: Botones Anterior/Siguiente para navegar entre múltiples imágenes
+- **Lista visual de archivos**: Vista de lista para seleccionar rápidamente entre las imágenes cargadas
+- **Indicador de progreso mejorado**: Mejor visualización del progreso durante la conversión
+- **Resumen de conversión mejorado**: Ventana de resumen más atractiva y detallada
+- **Gráficos estadísticos mejorados**: Diseño visual más atractivo para los gráficos de ahorro
+- **Correcciones de errores**: Solucionados problemas de sintaxis y mejorado el manejo de excepciones
 
 ## 📝 Licencia
 
