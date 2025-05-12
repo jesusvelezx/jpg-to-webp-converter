@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 class ImageConverterApp:
-	def __init__ (self, root):
+	def __init__(self, root):
 		self.root = root
 		self.root.title("Convertidor de Imágenes Avanzado")
 		self.root.geometry("1050x700")
@@ -65,7 +65,7 @@ class ImageConverterApp:
 			import traceback
 			traceback.print_exc()
 	
-	def crear_menu (self):
+	def crear_menu(self):
 		"""Crea el menú superior de la aplicación"""
 		menu_bar = Menu(self.root)
 		self.root.config(menu = menu_bar)
@@ -110,7 +110,7 @@ class ImageConverterApp:
 		ayuda_menu.add_separator()
 		ayuda_menu.add_command(label = "Acerca de", command = self.mostrar_acerca_de)
 	
-	def crear_interfaz (self):
+	def crear_interfaz(self):
 		"""Crea la interfaz principal de la aplicación"""
 		# Frame principal
 		main_frame = ttk.Frame(self.root, padding = "10")
@@ -331,22 +331,22 @@ class ImageConverterApp:
 		self.stats_tiempo = ttk.Label(stats_frame, text = "Tiempo: -")
 		self.stats_tiempo.pack(anchor = "w", pady = 2)
 	
-	def cambiar_modo_vista_previa (self):
+	def cambiar_modo_vista_previa(self):
 		"""Cambia entre los modos de vista previa simple y comparativa"""
 		if self.archivo_seleccionado:
 			self.mostrar_vista_previa()
 	
-	def actualizar_calidad (self, valor):
+	def actualizar_calidad(self, valor):
 		"""Actualiza la etiqueta de calidad y la vista previa"""
 		self.label_calidad.config(text = f"{self.calidad_webp.get()}%")
 		self.actualizar_vista_previa_si_hay_seleccion()
 	
-	def actualizar_vista_previa_si_hay_seleccion (self):
+	def actualizar_vista_previa_si_hay_seleccion(self):
 		"""Actualiza la vista previa si hay una imagen seleccionada"""
 		if self.archivo_seleccionado:
 			self.mostrar_vista_previa()
 	
-	def actualizar_opciones_formato (self, event = None):
+	def actualizar_opciones_formato(self, event = None):
 		"""Actualiza las opciones según el formato seleccionado"""
 		formato = self.formato_salida.get()
 		if formato in ['jpg', 'webp']:
@@ -360,7 +360,7 @@ class ImageConverterApp:
 		if self.archivo_seleccionado:
 			self.mostrar_vista_previa()
 	
-	def mostrar_info_formatos (self):
+	def mostrar_info_formatos(self):
 		"""Muestra información sobre los formatos de imagen soportados"""
 		info = (
 			"Formatos de imagen soportados:\n\n"
@@ -377,7 +377,7 @@ class ImageConverterApp:
 		# Usar messagebox para mostrar información
 		messagebox.showinfo("Información de Formatos", info)
 	
-	def mostrar_acerca_de (self):
+	def mostrar_acerca_de(self):
 		"""Muestra información acerca de la aplicación"""
 		mensaje = (
 			"Convertidor de Imágenes Avanzado\n"
@@ -388,7 +388,7 @@ class ImageConverterApp:
 		)
 		messagebox.showinfo("Acerca de", mensaje)
 	
-	def cambiar_modo_seleccion (self):
+	def cambiar_modo_seleccion(self):
 		"""Cambia entre modo de selección de carpeta y archivos"""
 		modo = self.modo_seleccion.get()
 		
@@ -419,7 +419,7 @@ class ImageConverterApp:
 			self.mostrar_mensaje_vista_previa("Selecciona archivos para convertir")
 			self.nav_frame.pack_forget()
 	
-	def toggle_redimension (self):
+	def toggle_redimension(self):
 		"""Muestra u oculta las opciones de redimensión"""
 		if self.redimensionar.get():
 			self.redim_frame.grid()
@@ -430,7 +430,7 @@ class ImageConverterApp:
 		if self.archivo_seleccionado:
 			self.mostrar_vista_previa()
 	
-	def seleccionar_origen (self):
+	def seleccionar_origen(self):
 		"""Selecciona una carpeta de origen y muestra una vista previa"""
 		carpeta = filedialog.askdirectory(title = "Selecciona la carpeta con imágenes originales")
 		if carpeta:
@@ -449,7 +449,7 @@ class ImageConverterApp:
 			if not archivos_encontrados:
 				messagebox.showinfo("Información", "No se encontraron imágenes en la carpeta seleccionada.")
 	
-	def seleccionar_archivos (self):
+	def seleccionar_archivos(self):
 		"""Selecciona múltiples archivos y muestra una vista previa del primero"""
 		archivos = filedialog.askopenfilenames(
 				title = "Selecciona imágenes para convertir",
@@ -481,13 +481,13 @@ class ImageConverterApp:
 			# Actualizar navegación
 			self.actualizar_botones_navegacion()
 	
-	def seleccionar_destino (self):
+	def seleccionar_destino(self):
 		"""Selecciona una carpeta de destino"""
 		carpeta = filedialog.askdirectory(title = "Selecciona la carpeta de destino")
 		if carpeta:
 			self.carpeta_destino.set(carpeta)
 	
-	def mostrar_mensaje_vista_previa (self, mensaje):
+	def mostrar_mensaje_vista_previa(self, mensaje):
 		"""Muestra un mensaje en lugar de una vista previa"""
 		# Limpiar el contenedor de vista previa
 		for widget in self.preview_container.winfo_children():
@@ -506,7 +506,7 @@ class ImageConverterApp:
 		self.info_convertido.config(text = "Tamaño convertido: -")
 		self.info_ahorro.config(text = "Ahorro: -")
 	
-	def mostrar_vista_previa (self):
+	def mostrar_vista_previa(self):
 		"""Genera y muestra una vista previa de la imagen seleccionada"""
 		if not self.archivo_seleccionado:
 			return
@@ -612,7 +612,7 @@ class ImageConverterApp:
 			self.mostrar_mensaje_vista_previa(f"Error al generar vista previa: {str(e)}")
 			print(f"Error en mostrar_vista_previa: {str(e)}")
 	
-	def cambiar_preview_por_seleccion (self, event):
+	def cambiar_preview_por_seleccion(self, event):
 		"""Cambia la vista previa cuando se selecciona una imagen de la lista"""
 		if not self.lista_archivos.curselection():
 			return
@@ -624,7 +624,7 @@ class ImageConverterApp:
 			self.mostrar_vista_previa()
 			self.actualizar_botones_navegacion()
 	
-	def mostrar_imagen_anterior (self):
+	def mostrar_imagen_anterior(self):
 		"""Muestra la imagen anterior en la lista de seleccionadas"""
 		if self.indice_miniatura_actual > 0:
 			self.indice_miniatura_actual -= 1
@@ -635,7 +635,7 @@ class ImageConverterApp:
 			self.mostrar_vista_previa()
 			self.actualizar_botones_navegacion()
 	
-	def mostrar_imagen_siguiente (self):
+	def mostrar_imagen_siguiente(self):
 		"""Muestra la imagen siguiente en la lista de seleccionadas"""
 		if self.indice_miniatura_actual < len(self.archivos_seleccionados) - 1:
 			self.indice_miniatura_actual += 1
@@ -646,7 +646,7 @@ class ImageConverterApp:
 			self.mostrar_vista_previa()
 			self.actualizar_botones_navegacion()
 	
-	def actualizar_botones_navegacion (self):
+	def actualizar_botones_navegacion(self):
 		"""Actualiza el estado de los botones de navegación"""
 		# Mostrar el índice actual
 		if self.archivos_seleccionados:
@@ -681,7 +681,7 @@ class ImageConverterApp:
 		
 		return imagen.resize((nuevo_ancho, nuevo_alto), Image.LANCZOS)
 	
-	def formato_tamano (self, tamano_bytes):
+	def formato_tamano(self, tamano_bytes):
 		"""Formatea un tamaño en bytes a formato legible (KB, MB)"""
 		if tamano_bytes < 1024:
 			return f"{tamano_bytes} bytes"
@@ -690,7 +690,7 @@ class ImageConverterApp:
 		else:
 			return f"{tamano_bytes / (1024 * 1024):.2f} MB"
 	
-	def iniciar_conversion (self):
+	def iniciar_conversion(self):
 		"""Inicia el proceso de conversión de imágenes"""
 		carpeta_destino = self.carpeta_destino.get()
 		
@@ -764,7 +764,7 @@ class ImageConverterApp:
 		# Iniciar conversión en hilo separado
 		threading.Thread(target = self.procesar_lote, args = (carpeta_destino, archivos)).start()
 	
-	def procesar_lote (self, carpeta_destino, archivos):
+	def procesar_lote(self, carpeta_destino, archivos):
 		"""Procesa un lote de imágenes en paralelo"""
 		try:
 			# Actualizar interfaz
@@ -847,7 +847,7 @@ class ImageConverterApp:
 			                                                f"Ocurrió un error durante la conversión: {str(e)}"))
 			self.root.after(0, lambda: self.boton_convertir.config(state = "normal"))
 	
-	def actualizar_progreso (self, porcentaje):
+	def actualizar_progreso(self, porcentaje):
 		"""Actualiza la barra de progreso y el porcentaje"""
 		self.progreso.set(porcentaje)
 		self.porcentaje_progreso.set(f"{porcentaje:.1f}%")
@@ -869,13 +869,13 @@ class ImageConverterApp:
 			tiempo_actual = time.time() - self.tiempo_inicio
 			self.stats_tiempo.config(text = f"Tiempo: {tiempo_actual:.1f} segundos")
 	
-	def calcular_porcentaje_ahorro (self):
+	def calcular_porcentaje_ahorro(self):
 		"""Calcula el porcentaje de ahorro"""
 		if self.tamano_original > 0:
 			return 100 - (self.tamano_nuevo / self.tamano_original * 100)
 		return 0
 	
-	def convertir_imagen (self, ruta_origen, ruta_destino):
+	def convertir_imagen(self, ruta_origen, ruta_destino):
 		"""Convierte una imagen y devuelve el tamaño original y nuevo"""
 		try:
 			# Obtener tamaño original
@@ -920,13 +920,13 @@ class ImageConverterApp:
 			# Solo propagar la excepción
 			raise
 	
-	def cancelar_conversion (self):
+	def cancelar_conversion(self):
 		"""Cancela la conversión en curso"""
 		self.cancelado = True
 		self.estado.set("Cancelando...")
 		messagebox.showinfo("Cancelando", "La conversión se cancelará en breve...")
 	
-	def mostrar_resumen_conversion (self):
+	def mostrar_resumen_conversion(self):
 		"""Muestra un resumen de la conversión con un diseño mejorado"""
 		try:
 			tiempo_total = time.time() - self.tiempo_inicio
@@ -1020,7 +1020,7 @@ class ImageConverterApp:
 			traceback.print_exc()
 
 
-def main ():
+def main():
 	try:
 		print("Iniciando aplicación...")
 		root = tk.Tk()
